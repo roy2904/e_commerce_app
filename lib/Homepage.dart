@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Widgets.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -151,7 +152,20 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 padding: EdgeInsets.only(left: 20,bottom: 20),
-                children: <Widget>[],
+                children: <Widget>[
+                  makeCard(
+                    context: context,
+                    startColor: Color.fromRGBO(251, 121, 155, 1),
+                    endColor: Color.fromRGBO(251, 53, 105, 1),
+                    image: 'assets/Watch 1.jpg'
+                  ),
+                  makeCard(
+                    context: context,
+                    startColor: Color.fromRGBO(251, 121, 155, 1),
+                    endColor: Color.fromRGBO(251, 53, 105, 1),
+                    image: 'assets/Watch 2.jpg'
+                  ),
+                ],
               ),
             ),
           ],
